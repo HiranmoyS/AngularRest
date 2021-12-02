@@ -1,0 +1,9 @@
+<h2>Using Post Component</h2>
+<button class="btn btn-primary" (click)="createPost()">Create Data</button>
+<ul class="list-group">
+    <li *ngFor="let post of posts" class="list-group-item">
+        <button (click)="updatePost(post)">Update</button>
+        <button (click)="deletePost(post)">Dalete</button>
+        {{post.title}}
+    </li>
+</ul>
